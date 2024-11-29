@@ -1,0 +1,80 @@
+/* #region Variables */
+
+:root {
+    /* Colors */
+    --color-background: #fff;
+}
+
+/* #endregion */
+
+/* #region Base */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 24px;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-background);
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    font-family: inherit;
+    color: currentColor;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* #endregion */
+
+.gallery-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 24px;
+    width: 1128px;
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+}
